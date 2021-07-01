@@ -1,3 +1,10 @@
+:root {
+  --past-color: rgb(167, 164, 164);
+  --present-color: orange;
+  --future-color: rgb(124, 196, 124);
+  --ooh-color: rgb(245, 106, 106);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -11,6 +18,41 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+.saveButton {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.text-block {
+  height: 100%;
+}
+
+.timePast {
+  background-color: var(--past-color);
+}
+
+.timePresent {
+  background-color: var(--present-color);
+}
+
+.timeFuture {
+  background-color: var(--future-color);
+}
+
+.outOfHours {
+  background-color: var(--ooh-color);
+}
+
+h2 {
+  background-color: white;
+  width: 100px;
+  height: 100%;
 }
 
 .jumbotron {
