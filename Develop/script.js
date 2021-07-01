@@ -19,16 +19,10 @@ let blockColorNineteen = document.getElementById("nineteen");
 let blockColorTwenty = document.getElementById("twenty");
 
 //TODO: ask alu to help me fix this
-//let currentTime = moment().format("DD MM YY h:mm:ss a")
-
+let currentTime = moment().format("DD MM YY h:mm:ss a")
 
 
 /* 
-timeblock colour change:
-if (currentTime > timeblockTime) {
-
-}
-
 //colour changers:
 if (currentTime < [hourly value of time]) {
     blockColorSix.className =  "timePast"
