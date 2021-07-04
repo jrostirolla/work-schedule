@@ -27,7 +27,6 @@ timeDisplay.textContent = currentTime;
 
 setInterval(timeUpdater, 1000);
 
-
 //colour changer:
 function colorChanger() {
 //6am
@@ -218,95 +217,207 @@ colorChanger()
 function saveButtonSix() {
     let inputSix = document.getElementById("six-text").value;
     localStorage.setItem("inputSix", inputSix);
+
+    let outputSix = localStorage.getItem("inputSix");
+    $('#six-text').attr("value", outputSix);
 }
 
 //7am
 function saveButtonSeven() {
     let inputSeven = document.getElementById("seven-text").value;
     localStorage.setItem("inputSeven", inputSeven);
+
+    let outputSeven = localStorage.getItem("inputSeven");
+    $('#seven-text').attr("value", outputSeven);
 }
 
 //8am
 function saveButtonEight() {
     let inputEight = document.getElementById("eight-text").value;
     localStorage.setItem("inputEight", inputEight);
+
+    let outputEight = localStorage.getItem("inputEight");
+    $('#eight-text').attr("value", outputEight);
 }
 
 //9am
 function saveButtonNine() {
     let inputNine = document.getElementById("nine-text").value;
     localStorage.setItem("inputNine", inputNine);
+
+    let outputNine = localStorage.getItem("inputNine");
+    $('#nine-text').attr("value", outputNine);
 }
 
 //10am
 function saveButtonTen() {
     let inputTen = document.getElementById("ten-text").value;
     localStorage.setItem("inputTen", inputTen);
+
+    let outputTen = localStorage.getItem("inputTen");
+    $('#ten-text').attr("value", outputTen);
 }
 
 //11am
 function saveButtonEleven() {
     let inputEleven = document.getElementById("eleven-text").value;
     localStorage.setItem("inputEleven", inputEleven);
+
+    let outputEleven = localStorage.getItem("inputEleven");
+    $('#eleven-text').attr("value", outputEleven);
 }
 
 //12am
 function saveButtonTwelve() {
     let inputTwelve = document.getElementById("twelve-text").value;
     localStorage.setItem("inputTwelve", inputTwelve);
+
+    let outputTwelve = localStorage.getItem("inputTwelve");
+    $('#twelve-text').attr("value", outputTwelve);
 }
 
 //1pm
 function saveButtonThirteen() {
     let inputThirteen = document.getElementById("thirteen-text").value;
     localStorage.setItem("inputThirteen", inputThirteen);
+
+    let outputThirteen = localStorage.getItem("inputThirteen");
+    $('#thirteen-text').attr("value", outputThirteen);
 }
 
 //2pm
 function saveButtonFourteen() {
     let inputFourteen = document.getElementById("fourteen-text").value;
     localStorage.setItem("inputFourteen", inputFourteen);
+
+    let outputFourteen = localStorage.getItem("inputFourteen");
+    $('#fourteen-text').attr("value", outputFourteen);
 }
 
 //3pm
 function saveButtonFifteen() {
     let inputFifteen = document.getElementById("fifteen-text").value;
     localStorage.setItem("inputFifteen", inputFifteen);
+
+    let outputFifteen = localStorage.getItem("inputFifteen");
+    $('#fifteen-text').attr("value", outputFifteen);
 }
 
 //4pm
 function saveButtonSixteen() {
     let inputSixteen = document.getElementById("sixteen-text").value;
     localStorage.setItem("inputSixteen", inputSixteen);
+
+    let outputSixteen = localStorage.getItem("inputSixteen");
+    $('#sixteen-text').attr("value", outputSixteen);
 }
 
 //5pm
 function saveButtonSeventeen() {
     let inputSeventeen = document.getElementById("seventeen-text").value;
     localStorage.setItem("inputSeventeen", inputSeventeen);
+
+    let outputSeventeen = localStorage.getItem("inputSeventeen");
+    $('#seventeen-text').attr("value", outputSeventeen);
 }
 
 //6pm
 function saveButtonEighteen() {
     let inputEighteen = document.getElementById("eighteen-text").value;
     localStorage.setItem("inputEighteen", inputEighteen);
+
+    let outputEighteen = localStorage.getItem("inputEighteen");
+    $('#eighteen-text').attr("value", outputEighteen);
 }
 
 //7pm
 function saveButtonNineteen() {
     let inputNineteen = document.getElementById("nineteen-text").value;
     localStorage.setItem("inputNineteen", inputNineteen);
+
+    let outputNineteen = localStorage.getItem("inputNineteen");
+    $('#nineteen-text').attr("value", outputNineteen);
 }
 
 //8pm
 function saveButtonTwenty() {
     let inputTwenty = document.getElementById("twenty-text").value;
     localStorage.setItem("inputTwenty", inputTwenty);
+    
+    let outputTwenty = localStorage.getItem("inputTwenty");
+    $('#twenty-text').attr("value", outputTwenty);
 }
 
-//clear set items
+
+//set value of inputs to local storage items
+function startUp() {
+    let outputSix = localStorage.getItem("inputSix");
+    $('#six-text').attr("value", outputSix);
+    
+    let outputSeven = localStorage.getItem("inputSeven");
+    $('#seven-text').attr("value", outputSeven);
+    
+    let outputEight = localStorage.getItem("inputEight");
+    $('#eight-text').attr("value", outputEight);
+
+    let outputNine = localStorage.getItem("inputNine");
+    $('#nine-text').attr("value", outputNine);
+
+    let outputTen = localStorage.getItem("inputTen");
+    $('#ten-text').attr("value", outputTen);
+
+    let outputEleven = localStorage.getItem("inputEleven");
+    $('#eleven-text').attr("value", outputEleven);
+
+    let outputTwelve = localStorage.getItem("inputTwelve");
+    $('#twelve-text').attr("value", outputTwelve);
+
+    let outputThirteen = localStorage.getItem("inputThirteen");
+    $('#thirteen-text').attr("value", outputThirteen);
+
+    let outputFourteen = localStorage.getItem("inputFourteen");
+    $('#fourteen-text').attr("value", outputFourteen);
+
+    let outputFifteen = localStorage.getItem("inputFifteen");
+    $('#fifteen-text').attr("value", outputFifteen);
+
+    let outputSixteen = localStorage.getItem("inputSixteen");
+    $('#sixteen-text').attr("value", outputSixteen);
+
+    let outputSeventeen = localStorage.getItem("inputSeventeen");
+    $('#seventeen-text').attr("value", outputSeventeen);
+
+    let outputEighteen = localStorage.getItem("inputEighteen");
+    $('#eighteen-text').attr("value", outputEighteen);
+
+    let outputNineteen = localStorage.getItem("inputNineteen");
+    $('#nineteen-text').attr("value", outputNineteen);
+
+    let outputTwenty = localStorage.getItem("inputTwenty");
+    $('#twenty-text').attr("value", outputTwenty);
+}
+startUp();
+
+//clear all items from the schedule
+function clearItems() {
+    localStorage.clear("inputSix");
+    localStorage.clear("inputSeven");
+    localStorage.clear("inputEight");
+    localStorage.clear("inputNine");
+    localStorage.clear("inputTen");
+    localStorage.clear("inputEleven");
+    localStorage.clear("inputTwelve");
+    localStorage.clear("inputThirteen");
+    localStorage.clear("inputFourteen");
+    localStorage.clear("inputFifteen");
+    localStorage.clear("inputSixteen");
+    localStorage.clear("inputSeventeen");
+    localStorage.clear("inputEighteen");
+    localStorage.clear("inputNineteen");
+    localStorage.clear("inputTwenty");
+
+    window.location.reload(true);
+}
 
 
-
-//TODO: Input save button functionality
 //TODO: Input localStorage render on reload (change input contents to localStorage?)
