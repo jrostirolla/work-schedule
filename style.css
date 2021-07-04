@@ -20,6 +20,13 @@ textarea {
   padding: 10px;
 }
 
+#clearContents {
+  padding: 12px;
+  font-weight: bolder;
+  background-color: var(--ooh-color);
+  border-radius: 10px;
+}
+
 .card {
   display: flex;
   flex-direction: row;
